@@ -14,7 +14,7 @@ def count_check(count, color)
   end
 end
 
-games_possible = []
+sum_of_game_ids = 0
 
 File.readlines('input.txt').each do |game|
   valid_game = true
@@ -37,7 +37,7 @@ File.readlines('input.txt').each do |game|
     end
   end
 
-  games_possible << game_number if valid_game
+  sum_of_game_ids += game_number.to_i if valid_game
 end
 
-puts games_possible.map { |x| x.to_i }.sum
+puts sum_of_game_ids

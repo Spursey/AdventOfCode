@@ -1,6 +1,6 @@
 #frozen_string_literal: true
 
-game_powers = []
+sum_of_game_powers = 0
 
 File.readlines('input.txt').each do |game|
   min_cube_count = {
@@ -23,7 +23,7 @@ File.readlines('input.txt').each do |game|
     end
   end
 
-  game_powers << min_cube_count[:red] * min_cube_count[:green] * min_cube_count[:blue]
+  sum_of_game_powers += min_cube_count[:red] * min_cube_count[:green] * min_cube_count[:blue]
 end
 
-puts game_powers.map { |x| x.to_i }.sum
+puts sum_of_game_powers
