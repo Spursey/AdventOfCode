@@ -1,19 +1,5 @@
 #frozen_string_literal: true
 
-MAX_RED = 12
-MAX_GREEN = 13
-MAX_BLUE = 14
-
-def count_check(count, color)
-  if color == 'red'
-    count <= MAX_RED
-  elsif color == 'green'
-    count <= MAX_GREEN
-  elsif color == 'blue'
-    count <= MAX_BLUE
-  end
-end
-
 game_powers = []
 
 File.readlines('input.txt').each do |game|
