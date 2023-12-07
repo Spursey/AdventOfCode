@@ -16,9 +16,7 @@ def identify_card_matches(card)
   winning_numbers = winning_numbers.split(' ')
   my_numbers = my_numbers.split(' ')
 
-  my_numbers.map { |x| winning_numbers.include?(x) }
-            .reject { |y| y == false }
-            .count
+  my_numbers.intersection(winning_numbers).length
 end
 
 def update_card_quantities(quantity, quantity_counts, start_index)
@@ -44,5 +42,3 @@ input.each_with_index do |card, index|
 end
 
 puts scratch_card_quantities.sum
-
-end_time = Time.now
