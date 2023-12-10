@@ -16,7 +16,6 @@ class SensorSequence
     @differences.insert(0, @sequence)
 
     while true
-      #puts "#{@differences[difference_index - 1][0].to_i} - #{@differences[difference_index][0].to_i}"
       new_diff = @differences[difference_index - 1][0].to_i - @differences[difference_index][0].to_i
 
       @differences[difference_index - 1].insert(0, new_diff)
@@ -74,10 +73,8 @@ input.each do |line|
   line = line.split(' ')
 
   sequence = SensorSequence.new(line)
-
   sequence.find_differences
   sequence.find_final_differences
-  #p sequence.find_next_number
 
   total += sequence.find_next_number
 end
