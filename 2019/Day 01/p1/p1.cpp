@@ -23,7 +23,7 @@ int main(void) {
     adjusted_number = floor(current_number / 3) - 2;
 
     total += adjusted_number;
-	}
+  }
 
   printf(" ---------- TOTAL ----------\n");
   printf("%i\n", total);
