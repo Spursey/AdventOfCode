@@ -16,9 +16,9 @@ int main(void) {
   input_file.open("input.txt");
 
   while(input_file >> current_line) {
-		current_number = stoi(current_line);
+    current_number = stoi(current_line);
 
-		adjusted_number = floor(current_number / 3) - 2;
+    adjusted_number = floor(current_number / 3) - 2;
     
     total = total + adjusted_number;
 
@@ -29,7 +29,7 @@ int main(void) {
     }
 
     adjusted_number = 0;
-	}
+  }
 
   printf(" ---------- TOTAL ----------\n");
   printf("%i\n", total);

@@ -18,11 +18,11 @@ int main(void) {
   input_file.open("input.txt");
 
   while(input_file >> current_line) {
-		current_number = stoi(current_line);
+    current_number = stoi(current_line);
 
-		adjusted_number = floor(current_number / 3) - 2;
+    adjusted_number = floor(current_number / 3) - 2;
 
-		total += adjusted_number;
+    total += adjusted_number;
 	}
 
   printf(" ---------- TOTAL ----------\n");
