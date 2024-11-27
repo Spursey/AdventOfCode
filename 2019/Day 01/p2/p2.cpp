@@ -31,6 +31,6 @@ int main(void) {
     adjusted_number = 0;
 	}
 
-  printf(" ---------- TOTAL ----------");
+  printf(" ---------- TOTAL ----------\n");
   printf("%i\n", total);
 }
