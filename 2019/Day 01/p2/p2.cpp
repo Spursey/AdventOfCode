@@ -6,14 +6,14 @@
 using namespace std;
 
 int main(void) {
-	int current_number = 0;
-	int adjusted_number = 0;
-	int total = 0;
+  int current_number = 0;
+  int adjusted_number = 0;
+  int total = 0;
 
   ifstream input_file;
   string current_line;
 
-	input_file.open("input.txt");
+  input_file.open("input.txt");
 
   while(input_file >> current_line) {
 		current_number = stoi(current_line);
