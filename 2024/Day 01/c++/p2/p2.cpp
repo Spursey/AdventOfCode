@@ -7,10 +7,6 @@
 
 using namespace std;
 
-bool is_a_number(char value) {
-  return value != ' ' && value != '\n';
-}
-
 int main(void) {
   int total = 0;
 
