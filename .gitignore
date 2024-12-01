@@ -1,2 +1,6 @@
 .vscode
-.o
+*.o
+*.txt
+p1
+p2
+
