@@ -5,8 +5,6 @@
 
 using namespace std;
 
-
-
 int main(void) {
   int current_number = 0;
   int adjusted_number = 0;
