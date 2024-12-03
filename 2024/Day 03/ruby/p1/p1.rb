@@ -1,5 +1,4 @@
 # frozen_string_literal: true
-require 'pp'
 INPUT_FILE = ARGV[0]
 
 total = 0
